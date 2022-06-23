@@ -1,4 +1,4 @@
-fetch('../json/galeria.json')
+fetch('./json/galeria.json')
 .then(res => res.json())
 .then(imagen =>{
       console.log()

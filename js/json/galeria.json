@@ -1,79 +1,79 @@
 [
       {
-            "imagen" : "1",
+            "id" : "1",
             "descripcion" : "Big Mac"
       },
       {
-            "imagen" : "2",
+            "id" : "2",
             "descripcion" : "McRoyal Deluxe UNO"
       },
       {
-            "imagen" : "3",
+            "id" : "3",
             "descripcion" : "McSpicy"
 
       },
       {
-            "imagen" : "4",
+            "id" : "4",
             "descripcion" : "Cuarto de Libre"
       },
       {
-            "imagen" : "5",
+            "id" : "5",
             "descripcion" : "McPollo"
       },
       {
-            "imagen" : "6",
+            "id" : "6",
             "descripcion" : "CBO"
       },
       {
-            "imagen" : "7",
+            "id" : "7",
             "descripcion" : "Signature Collection Queso de Cabra de Dani García"
       },
       {
-            "imagen" : "8",
+            "id" : "8",
             "descripcion" : "Signature Collection Queso de Cabra Doble de Dani García"
       },
       {
-            "imagen" : "9",
+            "id" : "9",
             "descripcion" : "American Style Chicken Buffalo"
       },
       {
-            "imagen" : "10",
+            "id" : "10",
             "descripcion" : "American Style Chicken Honey Mustard"
 
       },
       {
-            "imagen" : "11",
+            "id" : "11",
             "descripcion" : "Grand McExtreme de McDonal's Intensive Cheddar"
       },
       {
-            "imagen" : "12",
+            "id" : "12",
             "descripcion" : "Grand McExtreme de McDonal's Intensive Cheddar Doble"
 
       },
       {
-            "imagen" : "13",
+            "id" : "13",
             "descripcion" : "Grand McExtreme de McDonal's Bacon"
       },
       {
-            "imagen" : "14",
+            "id" : "14",
             "descripcion" : "Grand McExtreme de McDonal's Bacon Doble"
       },
       {
-            "imagen" : "15",
+            "id" : "15",
             "descripcion" : "hamburguesa"
       },
       {
-            "imagen" : "16",
+            "id" : "16",
             "descripcion" : "Cheeseburger"
 
       },
       {
-            "imagen" : "17",
+            "id" : "17",
             "descripcion" : "Doble Cheeseburger"
 
       },
       {
-            "imagen" : "18",
+            "id" : "18",
             "descripcion" : "Triple Cheeseburger"
       }
 ]

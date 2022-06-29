@@ -1,11 +1,14 @@
 *{
       box-sizing: border-box;
 }
+.navbar
+{
+      background-color: lightgoldenrodyellow;
+}
 .navbar .logo
 {
       width: 70px;
 }
-
 .carousel,
 .carousel .carousel-inner,
 .carousel .carousel-inner img
@@ -13,6 +16,15 @@
       width: 100%;
       height: 550px;
 }
+#mcmenu h1
+{
+      text-align: center;
+}
+#mcmenu p
+{
+      font-size: 16px;
+}
+
 .sandwich
 {
       display: flex;
@@ -40,6 +52,11 @@
       transition: 0.3s;
       box-shadow: 1px 1px 5px lightgray;
       cursor: pointer;
+}
+.pedidos
+{
+      background-color: lightgoldenrodyellow;
+      padding: 20px 50px;
 }
 
 .pedidos img

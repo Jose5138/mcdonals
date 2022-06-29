@@ -15,7 +15,7 @@
         
 <body>
       <!-- navegacion -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+      <nav class="navbar navbar-expand-lg navbar-light px-5">
             <div class="container-fluid">
                   <a class="navbar-brand" href="#">
                         <img  class="logo img-fluid" src="./img/galeria/hamburguesas/logo1.png" alt="logo">
@@ -87,7 +87,7 @@
       <div class="container-fluid mt-4" id="mcmenu">
             <div class="row">
                   <div class="col-md-5">
-                        <img src="./img/galeria/hamburguesas/20-Mc-wrap.png" class="img-fluid" alt="...">
+                        <img src="./img/galeria/hamburguesas/19.png" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-7">
                         <h1>Mc Menú </h1>
@@ -124,59 +124,91 @@
             <h1 class="lead">Tus hamburguesas favoritas en McDonald's</h1>
             <div id="sandwich" class="sandwich"></div>
       </div>
+
+
+
+      
       <!-- pedidos -->
-      <div class="pedidos bg-success mt-5 p-5" id="pedidos">
+      <div class="pedidos mt-5 p-5" id="pedidos">
             <h1>pedidos</h1>
             <div class="row">
             <div class="col-md-4">
-                  <form action="" method="post">
+                  <form method="get">
                         <div class="mb-3">
                               <label for="menu" class="form-label">Menú</label>
-                              <select class="form-control" id="menu"></select>
-                        </div>
-                        
+                              <select class="form-select" aria-label="Default select example" id="menu">
+                                    <option selected></option>
+                                    <option value="1">Big Mac</option>
+                                    <option value="2">Mc Pollo</option>
+                                    <option value="3">Hamburguesa</option>
+                                    <option value="4">Cuarto de Libra</option>
+                                    <option value="5">McSpicy®</option>
+                                    <option value="6">Cheese Burger</option>
+                              </select>
+                        </div>   
                         <div class="mb-3">
                               <label for="tamanio" class="form-label">Tamaño</label>
-                              <select class="form-control" id="tamano"></select>
+                              <select class="form-select" id="tamanio">
+                                    <option selected></option>
+                                    <option value="mediano">Mediano</option>
+                                    <option value="grande">Grande</option>
+                              </select>
                         </div>
 
                         <div class="mb-3">
                               <label for="complemento" class="form-label">Complemento</label>
-                              <select class="form-control" id="complemento"></select>
+                              <select class="form-select" id="complemento">
+                                    <option selected></option>
+                                    <option value="1">Patatas Fritas</option>
+                                    <option value="2">Patatas deluxe</option>
+                                    <option value="3">Ensalada de la huerta</option>
+                              </select>
                         </div>
 
                         <div class="mb-3">
                               <label for="bebidas" class="form-label">Bebida:</label>
-                              <select class="form-control" id="bebidas"></select>
+                              <select class="form-select" id="bebidas">
+                                    <option value="0"></option>
+                                    <option value="1">Coca Cola</option>
+                                    <option value="2">Fanta</option>
+                                    <option value="3">Sprite</option>
+                                    <option value="4">Agua</option>
+                                    <option value="5">Cerveza</option>
+                              </select>
                         </div>
 
                         <div class="mb-3">
                               <label for="postre" class="form-label">postre</label>
-                              <select class="form-control" id="postre"></select>
+                              <select class="form-control" id="postre">
+                                    <option selected></option>
+                                    <option value="1">Tarta</option>
+                                    <option value="2">Helado</option>
+                                    <option value="3">Café con Helado</option>
+                              </select>
                         </div>
 
                         <div class="mb-3">
                               <label for="unidades" class="form-label">Unidades:</label>
-                              <input type="number" id="unidades">
+                              <input type="number" id="unidades" min="1" max="10" value="1">
                         </div>
 
                         <div class="mb-3">
                               <label for="importe" class="form-label">Importe:</label>
                               <input type="text" id="importe">
                         </div>
-                        
-                        <button type="submit" class="btn btn-light">Realizar el pedido</button>
+                        <input type="submit" value="Realizar Pedido" id="enviar">
+                        <!-- <button type="submit" class="btn btn-light" id="btn">Realizar el pedido</button> -->
                   </form>
             </div>
             <div class="col-md-8">
-                  <img class="img-fluid" src="./img/menus/0.png" alt="...">
+                  <img class="img-fluid" src="./img/menus/0.png" id="pantalla" alt="...">
             </div>
       </div>
       </div>
 
       <!-- reservas  -->
       <div class="reservas mt-5" id="reservas">
-            <form action="#!" method="post">
+            <form  id="form">
                   <label for="name">Nombre:</label>
                   <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
 
@@ -189,7 +221,7 @@
                   <label for="comentario">Comentario</label>
                   <textarea id="comnetario" cols="30" rows="10"></textarea>
 
-                  <button type="submit" class="btn btn-light"> Enviar</button>
+                  <button type="submit" class="btn btn-light" id="btn2"> Enviar</button>
             </form>
       </div>
 
@@ -218,7 +250,7 @@
                         </p>
                   </div>
                   <div class="col-lg-4">
-                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.214321634774!2d-16.364373185446194!3d28.38259400210086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc402d76e94c5f05%3A0x4557adccef0eebcd!2sMcDonald&#39;s!5e0!3m2!1ses!2ses!4v1656008204888!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.214321634774!2d-16.364373185446194!3d28.38259400210086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc402d76e94c5f05%3A0x4557adccef0eebcd!2sMcDonald&#39;s!5e0!3m2!1ses!2ses!4v1656008204888!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
             </div>
       </footer>
